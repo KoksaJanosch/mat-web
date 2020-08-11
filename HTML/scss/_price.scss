@@ -1,0 +1,34 @@
+//
+// price.scss
+//
+.pricing-table {
+    overflow: hidden;
+    position: relative;
+    .pricing-features {
+        ul {
+            li {
+                position: relative;
+                padding: 10px 0;
+            }
+        }
+    }
+    .price-value{
+        .price-lable {
+            .rates {                        
+                display: inline-block;
+                font-size: 32px;
+            }
+        }
+    }    
+    .lable {
+        width: 200px;
+        position: absolute;
+        top: 20px;
+        right: -60px;
+        transform: rotate(45deg);
+        z-index: 1;
+        h6 {
+            font-size: 12px;
+        }
+    }
+}

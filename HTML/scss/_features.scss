@@ -1,0 +1,170 @@
+//
+// .scss
+//
+.features {
+    position: relative;
+    z-index: 2;
+    margin: -160px 0 0;
+    &.features-two {
+        margin: -220px 0 0;
+    }
+    .title {
+        letter-spacing: 1px;
+        // font-weight: 700;
+    }
+    a {
+        &:hover {
+            color: $custom !important;
+        }
+    }
+}
+.feature-margin {
+    margin-top: 100px;
+}
+.features-box {
+    .title-icon {
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        background: $gray-100;
+    }
+    .title {
+        font-size: 18px;
+    }
+    ul {
+        li {
+            position: relative;
+            padding: 10px 0;
+        }
+    }
+}
+//Services
+.service-container {
+    transition: all 0.5s ease;
+    .icon {
+        margin-top: 5%;
+        font-size: 38px;
+        transition: all 0.5s ease;
+    }
+    .number-icon {        
+        .icon-2 {
+            height: 70px;
+            width: 70px;
+            line-height: 80px;
+            border-radius: 64% 36% 55% 45% / 76% 72% 28% 24% !important;
+            border-color: $custom !important;
+            transition: all 0.5s ease;
+            i {
+                font-size: 30px;      
+            }
+        }
+        .number {
+            position: absolute;
+            top: 0;
+            right: 70px;
+            left: 0;
+            height: 35px;
+            width: 35px;
+            margin: 0 auto;
+            transition: all 0.5s ease;
+            span {
+                line-height: 30px;
+            }
+        }
+    }
+    .content {
+        .number {
+            font-size: 40px;
+            color: $gray-300;
+        }
+        .title {
+            transition: all 0.5s ease;
+        }
+    }
+    &.hover-bg {
+        transition: all 0.5s ease;
+        .smooth-icon {
+            position: absolute;
+            bottom: -40px;
+            right: -20px;
+            font-size: 60px;
+            color: $gray-100;
+            transition: all 0.8s ease;
+        }
+        &:hover {
+            background-color: $custom;
+            .content {
+                .title {
+                    color: $white !important;
+                }
+                .serv-pera {
+                    color: $light !important;
+                }
+            }
+            .smooth-icon {
+                font-size: 100px;
+                opacity: 0.2;
+                bottom: -20px;
+                right: 10px;
+            }
+        }
+    }
+    &:hover {
+        background-color: $white;
+        box-shadow: $shadow-lg !important;
+        .icon {
+            color: $custom;
+            animation: mover 1s infinite alternate;
+        }
+        .number-icon {
+            .icon-2 {
+                background-color: $custom;
+                border-radius: 50% !important;
+                i {
+                    color: $white !important;     
+                }
+            }
+            .number {
+                color: $white;
+                background: $custom !important;
+                border-color: $white !important;
+            }
+        }        
+        .content {
+            .title {
+                color: $custom;
+            }
+        }
+    }
+    a{
+        &:hover,
+        .title:hover {
+            color: $custom !important;
+        }
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .features {
+        &.features-two {
+            margin: 0 0 30px;
+        }
+        &.feature-charity {
+            margin: 0 0 30px;            
+        }
+    }
+    .feature-margin {
+        margin-top: 60px;
+    }
+}

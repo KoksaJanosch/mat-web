@@ -1,0 +1,330 @@
+//
+// components.scss
+//
+//Buttons
+@each $name,
+$value in $colors {
+    .btn-#{$name} {
+        background-color: #{$value} !important;
+        border: 1px solid #{$value} !important;
+        color: $white !important;
+        box-shadow: 0 3px 7px rgba($value, 0.5);
+        &:hover, &:focus, &:active, &.active, &.focus{
+            background-color: darken($value, 10%) !important;
+            border-color: darken($value, 10%) !important;
+            color: $white !important;
+        }
+    }
+
+    .btn-outline-#{$name} {
+        border: 1px solid #{$value};
+        color: #{$value};
+        background-color: transparent;    
+        &:hover, &:focus, &:active, &.active, &.focus, &:not(:disabled):not(.disabled):active{
+            background-color: #{$value};
+            border-color: #{$value};
+            color: $white !important;
+            box-shadow: 0 3px 7px rgba($value, 0.5);
+        }
+    }
+}
+
+.btn {
+    padding: 8px 20px;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 5px;
+    &:focus{
+        box-shadow: none !important;
+    }
+    &.btn-sm{
+        padding: 7px 16px;
+        font-size: 10px;
+    }
+    &.btn-lg{
+        padding: 14px 30px;
+        font-size: 16px;
+    } 
+    &.searchbtn {
+        padding: 6px 20px;
+    }
+    &.btn-pill {
+        border-radius: 30px;
+    }
+    &.btn-light {
+        color: $dark !important;
+        background: $light;
+        border: 1px solid $gray-300;
+        &:hover, &:focus, &:active, &.active, &.focus{
+            background-color: darken($light, 10%) !important;
+            color: $dark; 
+        }
+    }    
+    &.btn-outline-light {
+        border: 1px solid $gray-300;
+        color: $dark !important;
+        background-color: transparent;    
+        &:hover, &:focus, &:active, &.active, &.focus{
+            background-color: $light;
+        }
+    }
+}
+
+button:not(:disabled) {
+    outline: none;
+}
+
+//Spinner
+.spinner-grow {
+    width: 14px;
+    height: 14px;
+    animation: spinner-grow 1s linear infinite;
+}
+
+/****Skill*******/
+.skills{
+    &.skill-data {
+        width: 130px;
+        height: 130px;
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130px;
+            height: 130px;
+        }
+    }
+    .pie-chart-value {
+        line-height: 130px;
+        font-size: 24px;
+    }
+}
+
+//Processbar
+.progress-box {
+    .progress {
+        height: 10px;
+        overflow: visible;
+        .progress-bar {
+            border-radius: 6px;
+            animation: animate-positive 3s;
+            overflow: visible !important;
+        }
+        .progress-value {
+            position: absolute;
+            top: -40px;
+            right: -18px;
+            border: 2px solid $custom;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 13px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                right: 9px;
+                border-top: 7px solid $custom;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+            }
+        }
+    }
+    @keyframes animate-positive {
+        0% {
+            width: 0;
+        }
+    }
+}
+//Nav
+.nav-pills {
+    .nav-link{
+        color: $dark !important;
+        margin: auto 15px;
+        border: 1px solid $gray-200;
+        &.active {
+            background-color: $custom;
+            color: $white !important;
+            box-shadow: $shadow;
+        }
+    }
+    a {
+        .screenshot {
+            .title {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+//Avatar
+.avatar {
+    &.avatar-md-sm{
+        height: 45px;
+        width: 45px;
+    }
+    &.avatar-small{
+        height: 60px;
+        width: 60px;
+    }
+    &.avatar-medium{
+        height: 110px;
+        width: 110px;
+    }
+    &.avatar-large{
+        height: 140px;
+        width: 140px;
+    }
+    &.avatar-ex-large{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+//Pre loader
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, $white, $white);
+    z-index: 9999999;
+    #status {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        .spinner {
+            margin: 100px auto;
+            width: 40px;
+            height: 20px;
+            text-align: center;
+            font-size: 6px;
+            > div {
+                background-color: $custom;
+                height: 100%;
+                width: 6px;
+                display: inline-block;
+                animation: sk-stretchdelay 1.2s infinite ease-in-out;
+            }
+            .rect2 {
+                animation-delay: -1.1s;
+            }
+            .rect3 {
+                animation-delay: -1.0s;
+            }
+            .rect4 {
+                animation-delay: -0.9s;
+            }
+            .rect5 {
+                animation-delay: -0.8s;
+            }
+        }
+          
+        @keyframes sk-stretchdelay {
+            0%, 40%, 100% { 
+              transform: scaleY(0.4);
+            }  20% { 
+                transform: scaleY(1.0);
+            }
+        }
+    }
+}
+
+//Icons
+.social-icon {
+    li {
+        a {            
+            color: $dark;
+            display: inline-block;
+            height: 34px;
+            width: 34px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border-radius: 50px;
+            overflow: hidden;
+            position: relative;
+            i {                
+                font-size: 16px;
+                line-height: 34px;
+            }
+            &:hover {
+                background-color: $custom;
+                color: $white !important;
+                box-shadow: $shadow;
+            }
+        }
+    }
+    &.social {
+        li {
+            a {
+                color: $gray-500;
+            }
+        }
+    }
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 3px;
+}
+//back to top
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99; 
+    width: 33px;
+    height: 33px;
+    line-height: 31px;
+    display: none;
+    color: $dark;
+    background-color: $gray-300;
+    transition: all 0.5s ease; 
+    i {
+        font-size: 16px;        
+    }
+    &:hover {
+        background-color: $custom;
+        border-color: $custom !important;
+        color: $white;
+    }
+}  
+
+
+//Checkbox / Radio button
+.custom-control-input:checked~.custom-control-label {
+    &:before {
+        color: $white;
+        border-color: $custom;
+        background-color: $custom;
+    }
+}
+.custom-control-input:focus~.custom-control-label::before,
+.form-control:focus {
+    box-shadow: none;
+    border-color: $custom;
+}
+
+.custom-control-label {
+    cursor: pointer;
+    &:before,
+    &:after {
+        top: 2px;
+    }
+}
+
+// counter.scss
+.counter-box {
+    .counter-head {
+        letter-spacing: 1px;
+    }
+}
+
+//modal
+.modal-open {
+    padding-right: 0 !important;
+}

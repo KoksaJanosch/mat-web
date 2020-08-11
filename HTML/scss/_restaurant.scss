@@ -1,0 +1,93 @@
+//
+// restaurent.scss
+//
+.restaurant-wraper {
+    // General
+    font-family: $font-resto-base !important;
+    h1, h2, h3, h4, h5, h6, .navbar-custom .navbar-nav li a {
+        font-family: $font-resto-base;
+    }
+    // Menu
+    .navbar-custom {
+        .navbar-nav {
+            li {
+                a {
+                    letter-spacing: 2px;
+                    font-size: 12px;
+                }
+            }
+        }
+    } 
+    //Home Heading 
+    .title-heading {
+        .heading {
+            font-size: 55px !important;
+        }
+    }
+
+    // Section title 
+    .section-title {
+        .title {
+            font-size: 22px !important;
+        }
+    }
+    //About
+    .about-resto {
+        font-size: 18px;
+    }
+    //Menu
+    .portfolio-box {       
+        .thumb {
+            img {
+                width: 80px;
+            }
+        }
+        .menu-content {
+            .title {
+                font-size: 17px; 
+                a {
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: $custom !important;
+                    }
+                }
+                span {
+                    transition: all 0.5s ease;
+                }
+            }
+        } 
+    }
+    //Services
+    .resto-service {
+        img {
+            height: 75px;
+        }
+        .content {
+            .title {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .restaurant-wraper {
+        .title-heading {
+            .heading {
+                font-size: 40px !important;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .portfolio-box {        
+        .menu-content {
+            .title {
+                font-size: 13px !important; 
+            }            
+        }
+    }
+}

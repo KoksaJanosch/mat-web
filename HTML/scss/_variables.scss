@@ -1,0 +1,72 @@
+//
+// variables.scss
+//
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600,700&display=swap');
+// Restaurent Font family
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+
+// Color variables
+$white:                     #ffffff;
+
+$primary:                   #0062ff;
+$secondary:                 #5a6d90;
+$success:                   #3dd598;
+$info:                      #50b5ff;
+$warning:                   #ffc542;
+$danger:                    #fc5a5a;
+$black:                     #000000;
+$dark:                      #2f3c4e;
+$muted:                     #8492a6;
+$light:                     #fafafb;
+
+// Gray shadow
+$gray-100:                  #f8f9fa;
+$gray-200:                  #e9ecef;
+$gray-300:                  #dee2e6;
+$gray-400:                  #ced4da;
+$gray-500:                  #adb5bd;
+$gray-600:                  #6c757d; 
+$gray-700:                  #495057;
+
+//Custom
+$custom:                    #f89d36; //f89d36
+$shadow:                      0 0 3px rgba($dark,.15);
+$shadow-lg:                   0 10px 25px rgba($dark, 0.15);
+
+//Overlay
+$overlay:                     rgba($dark, 0.65);
+
+// Base font
+$font-size-base:              15px;
+
+$font-family-base:            'Muli', sans-serif;
+$font-family-secondary:       'Muli', sans-serif;
+$font-resto-base:             'Libre Baskerville', serif;
+
+//Switcher Colors
+$default:                      $custom;
+$blue:                         $primary;
+$green:                        $success;
+$red:                          $danger;
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "info": $info,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "custom": $custom,
+);
+
+$font-sizes: (
+    h1: 42px,
+    h2: 36px,
+    h3: 30px,
+    h4: 24px,
+    h5: 18px,
+    h6: 14px,
+);

@@ -1,0 +1,47 @@
+/* Template Name: Bootgen - Responsive Multipurpose Template
+   Author: Uniquecrew
+   Email: uniquecrewdesign@gmail.com
+   Version: 1.1.0
+   Updated: December 2019 
+   File Description: Main Css file of the template
+*/
+
+/*****************************/
+/*       INDEX               */
+/*============================
+ *    01.  Variables         *
+ *    02.  Bootstrap custom  *
+ *    03.  Components        *
+ *    04.  General           *
+ *    05.  Helper            *
+ *    06.  Menu              *
+ *    07.  Home              *
+ *    09.  Portfolio         *
+ *    10.  CTA               *
+ *    11.  Team              *
+ *    12.  Testi             *
+ *    13.  Features          *
+ *    15.  Price             *
+ *    16.  Blog              *
+ *    17.  Contact           *
+ *    18.  Footer            *
+ *    19.  Restaurant        *
+ ============================*/
+
+@import "variables";
+@import "bootstrap-custom";
+@import "components";
+@import "general";
+@import "helper";
+@import "menu";
+@import "home";
+@import "portfolio";
+@import "cta";
+@import "team";
+@import "testi";
+@import "features";
+@import "price";
+@import "blog";
+@import "contact";
+@import "footer";
+@import "restaurant";
