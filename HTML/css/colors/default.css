@@ -28,7 +28,7 @@
 .service-container:hover .number-icon .icon-2,
 .service-container:hover .number-icon .number,
 .navbar-custom .login-button {
-    background-color: #f89d36 !important;
+    background-color: #00A8E8 !important;
 }
 
 .text-custom,
@@ -56,7 +56,8 @@
 .footer .footer-recent .footer-recent-content a:hover,
 .restaurant-wraper .portfolio-box .menu-content .title a:hover,
 .navbar-custom .navbar-nav li.active a {
-    color: #f89d36 !important;
+    /* TEXT */
+    color: #00A8E8 !important;
 }
 
 .btn-custom,
@@ -84,11 +85,12 @@
 .form-group .form-control:focus,
 .form-group .form-control.active,
 .subscribe .form-control:focus {
-    border-color: #f89d36 !important;
+    /* border.BUTTON */
+    border-color: #00A8E8 !important;
 }
 
 a.text-custom:hover {
-    color: #f7911d !important;
+    color: #f89d36 !important;
 }
 
 .btn-custom,
@@ -98,7 +100,7 @@ a.text-custom:hover {
 .btn-outline-custom.active, 
 .btn-outline-custom.focus, 
 .btn-outline-custom:not(:disabled):not(.disabled):active {
-    box-shadow: 0 3px 7px rgba(248, 157, 54, 0.5) !important;
+    box-shadow: 0 3px 7px rgba(0, 168, 232, 0.5) !important;
 }
 
 .bg-gradient-overlay {
@@ -110,8 +112,10 @@ a.text-custom:hover {
 .btn-custom:active, 
 .btn-custom.active, 
 .btn-custom.focus {
-    background-color: #f38508 !important;
-    border-color: #f38508 !important;
+    /* hover.BUTTON */ 
+    background-color: #0084B8 !important;
+    /* hover.BUTTON.border */
+    border-color: #0084B8 !important;
 }
 
 .progress-box .progress .progress-value:after {
