@@ -2042,4 +2042,30 @@ p {
     font-size: 13px !important;
   }
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #2F3C4E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #01A8E8;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid #01A8E8;
+}
 /*# sourceMappingURL=style.css.map */
