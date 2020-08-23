@@ -2044,12 +2044,12 @@ p {
 }
 
 /* Add a black background color to the top navigation */
-.topnav {
+.nav-ser {
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.nav-ser a {
   float: left;
   display: block;
   color: #2F3C4E;
@@ -2061,11 +2061,11 @@ p {
   border-bottom: 3px solid transparent;
 }
 
-.topnav a:hover {
+.nav-ser a:hover {
   border-bottom: 3px solid #01A8E8;
 }
 
-.topnav a.active {
+.nav-ser a.active {
   border-bottom: 3px solid #01A8E8;
 }
 /*# sourceMappingURL=style.css.map */
